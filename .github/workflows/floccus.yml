@@ -218,7 +218,7 @@ jobs:
           cat server/data/nextcloud.log "$RUNNER_TEMP/nextcloud-http.log" 2>/dev/null || true
 
   summary:
-    runs-on: ubuntu-latest-low
+    runs-on: ubuntu-latest
     needs: [ init, selenium ]
 
     if: always()
